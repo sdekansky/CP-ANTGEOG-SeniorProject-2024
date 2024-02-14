@@ -7,52 +7,8 @@ body, div, h1, section {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
-    text-align: center;
-}
-
-main {
-    margin-top: 60px; /* Adjust this value to match the height of the header */
-}
-
-#navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100px;
-    background-color: #33333300;
-    color: #fff;
-    padding: 20px;
-}
-
-#navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover {
-    color: #fff;
-}
-
-#navbar ul li a {
-    color: transparent;
-    text-decoration: none;
+    background-color: #2d2d2d;
+    color: #d8d8d8;
 }
 
 section {
@@ -64,26 +20,17 @@ section {
 }
 
 #section1 {
-        background-image: url('../assets/images/image2.jpeg');
-        background-size: cover; /* This will scale the image to cover the entire section */
-        background-position: center; /* This will center the image in the section */
+    background-color: #2d2d2d;
+
 }
 
 #section2 {
-    background-color: #f6e6e7;
+    background-color: #2d2d2d;
 }
 
 #section3 {
-    background-color: #f9c5d1;
+    background-color: #2d2d2d;
     flex-direction: column;
-}
-
-footer {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
 }
 
 button {
