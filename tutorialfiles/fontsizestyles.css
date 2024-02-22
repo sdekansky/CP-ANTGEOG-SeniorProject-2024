@@ -2,12 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100px;
 }
-h2 {
+h1 {
     text-align: center;
     font-family:  'Helvetica', sans-serif;
     color:beige;
     background-color:darkgray
 }
   
+#title-paragraph {
+    text-align: center;
+    font-family:  'Helvetica', sans-serif;
+    font-size: 1rem;
+    color:black;
+}
