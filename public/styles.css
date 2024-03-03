@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* /* selector for font import*/
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Micro 5', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 body 
 {
     min-height: 100vh;
-    background: linear-gradient(#8d8d8d,  #454545)
+    background-color:#121212;
 }
 
-header 
+
+header /*framework for all of header content*/
 {
     position: absolute;
     top: 0;
@@ -24,42 +25,110 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10000;
 }
 
-header .logo 
+header .logo /*styles logo */
 {
-    color: #000000;
-    font-weight: 700;
+    color: rgb(234, 219, 203);
+    font-weight: 1000;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-header ul 
+header ul /*framework for header list items*/
 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li 
+header ul li /*moves header list items to the left*/
 {
     list-style: none;
     margin-left: 20px;
 }
 
-header ul li a 
+header ul li a /*styles text of header list items*/
 {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 6px 15px;
-    color: #000000;
+    color: rgb(234, 219, 203);
+    font-weight: 500;
     border-radius: 20px;
+    text-transform: uppercase;
 }
 
-header ul li a:hover
+header ul li a:hover /*styles hover effect of header list items*/
 {
-    background: #000000;
-    color: #ffffff;
+    background: #121212;
+    color: rgb(234, 219, 203%);
 }
+
+.homepage 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/faraway6.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 60px;
+    border-radius: 80px;
+    background-color: #ffffff00;
+    color: rgb(234, 219, 203);
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    z-index: 100;
+    transition: background-color .5s, color .5s;
+}
+
+.button:hover
+{
+    background-color: #121212;
+    color: rgb(234, 219, 203)
+}
+
+.homepage img
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.homepage img#mountback{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.homepage img#bushesfront
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    display: grid;
+}
+
